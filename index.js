@@ -1,4 +1,5 @@
 let container = document.querySelector('.container')
+let header_navigation = document.querySelectorAll('.header_navigation a')
 
 // swiper
 
@@ -20,11 +21,8 @@ fetchSwipe(3, 3)
 
 let a = window.screen.width
 
-console.log(a);
-
 if (a <= 480) {
     fetchSwipe(1, 1)
-    window.reload()
 } else if (a <= 1025) {
     fetchSwipe(2, 2)
 } else {
@@ -32,3 +30,10 @@ if (a <= 480) {
 }
 
 // swiper
+
+header_navigation.forEach(btn => {
+    btn.onclick = () => {
+        header_navigation.forEach(el => el.classList.remove('active'))
+        btn.classList.add('active')
+    }
+})

@@ -53,17 +53,16 @@ header {
     background-color: #fff;
     display: flex;
     align-items: center;
-    /* position: fixed;
-    top: 0; */
 }
 
-header a {
+header a{
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 10px;
     color: #222222;
     margin-left: 5%;
+    transition: .2s ease;
 }
 
 .header_navigation {
@@ -71,7 +70,17 @@ header a {
     margin-left: 20%;
 }
 
-.header_home {
+.links {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 10px;
+    color: #222222;
+    margin-left: 5%;
+    transition: .2s ease;
+}
+
+.active {
     color: #0082F3;
 }
 
